@@ -1,0 +1,162 @@
+:root{
+    --blanc: rgb(240, 240, 240);
+    --black: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 95vh;
+    background-image: url(assets/bkg.jpg);
+    z-index: -10;
+    background-size: cover;
+}
+
+header .head-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: end;
+    padding: 20px 20px 0 0;
+}
+
+header .head-top .hamburg{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+header .head-top .hamburg .hamb{
+    width: 45px;
+    height: 5px;
+    background: var(--black);
+    margin-top: 5px;
+}
+
+header .head-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 300px 0 0 20px;
+}
+
+main{
+    margin: 40px 70px;
+    max-width: 100vw;
+}
+
+#one img{
+    max-width: 600px;
+    margin-bottom: 10px;
+}
+
+.sec1-para{
+    max-width: 600px;
+}
+
+#two img{
+    max-width: 390px;
+    margin-bottom: 10px;
+}
+
+.sec2-para{
+    max-width: 390px;
+
+}
+#three img{
+    max-width: 290px;
+    margin-bottom: 10px;
+}
+
+.sec3-para{
+    max-width: 290px;
+
+}
+
+section div{
+    margin-left: 20px;
+
+}
+
+
+section{
+    display: flex;
+    margin-top: 40px;
+}
+
+.cas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    text-justify: auto;
+}
+
+div#four{
+    width: 100%;
+    height: 600px;
+    background-image: url(assets/bkg-form.jpg);
+    z-index: -10;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    margin-top: 30px;
+    padding: 40px;
+    border-radius: 25px;
+    background: var(--blanc);
+    width: 700px;
+}
+
+.content-sous{
+    display: flex;
+    margin-top: 20px;
+}
+
+.cont-right{
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+}
+
+.cont-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+button{
+    padding: 5px 30px;
+    border-radius: 15px;
+}
+.btn-one{
+    background: linear-gradient( #b9bbde,#669);
+    z-index: 10;
+}
+.btn-two{
+    background: linear-gradient( 45deg, #b8babb,#6f6e73);
+}
+input{
+
+    padding: 5px 100px 5px 5px;
+}
