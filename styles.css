@@ -1,6 +1,9 @@
 :root{
     --blanc: rgb(240, 240, 240);
     --black: black;
+    --car: white;
+    --foote: #ff7fcf;
+    --deg: rgba(120,120,120,0.2);
 }
 
 *{
@@ -159,4 +162,40 @@ button{
 input{
 
     padding: 5px 100px 5px 5px;
+}
+
+footer{
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: var(--foote);
+}
+.foot{
+    background: var(--deg);
+    padding: 5px  60px 5px 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    overflow-x: hidden;
+}
+
+.tr-cont{
+    display: flex;
+    align-items: center;
+}
+.carr{
+    height: 10px;
+    width: 10px;
+    background: var(--car);
+}
+
+@media screen and (max-width: 740px) {
+    main{
+    width: 80%;
+}
+}
+
+@media screen and (max-width: 480px) {
+    
 }
