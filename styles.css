@@ -53,11 +53,16 @@ header .head-bottom{
 main{
     margin: 40px 70px;
     max-width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #one img{
     max-width: 600px;
     margin-bottom: 10px;
+    object-fit: cover;
+    background-size: cover;
+
 }
 
 .sec1-para{
@@ -67,6 +72,8 @@ main{
 #two img{
     max-width: 390px;
     margin-bottom: 10px;
+    object-fit: cover;
+    background-size: cover;
 }
 
 .sec2-para{
@@ -76,6 +83,10 @@ main{
 #three img{
     max-width: 290px;
     margin-bottom: 10px;
+    object-fit: cover;
+    background-size: cover;
+
+
 }
 
 .sec3-para{
@@ -91,6 +102,7 @@ section div{
 
 section{
     display: flex;
+    flex-wrap: wrap;
     margin-top: 40px;
 }
 
@@ -191,11 +203,72 @@ footer{
 }
 
 @media screen and (max-width: 740px) {
+
     main{
-    width: 80%;
-}
+        margin: 20px 20px;
+        max-width: 100vw;
+    }
+    #one .one-cas1 img{
+        max-width: 670px;
+        margin-bottom: 10px;
+    }
+    
+    .one-para1{
+        max-width: 500px;
+    }
+
+    .one-cas2 img{
+        max-width: 390px;
+    }
+
+    .one-para2{
+        max-width: 390px;
+
+    }
+    
+    #two img{
+        max-width: 390px;
+        margin-bottom: 10px;
+    }
+    
+    .sec2-para{
+        max-width: 390px;
+    
+    }
+    #three img{
+        max-width: 290px;
+        margin-bottom: 10px;
+    }
+    
+    .sec3-para{
+        max-width: 290px;
+    
+    }
+    
+    section div{
+        margin-left: 20px;
+    
+    }
 }
 
 @media screen and (max-width: 480px) {
+
+    main{
+        margin: 20px 20px;
+        max-width: 100vw;
+    }
+    #one .one-cas1 img{
+        max-width: 300px;
+        margin-bottom: 10px;
+    }
     
+    .one-para1{
+        max-width: 300px;
+    }
+    .one-para2{
+        max-width: 600px;
+    }
+    #one img {
+        max-width: 400px;
+    }
 }
