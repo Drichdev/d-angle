@@ -24,6 +24,7 @@ header{
     z-index: -10;
     background-size: cover;
     object-fit: cover;
+    position: static;
 }
 
 header .head-top{
@@ -49,8 +50,8 @@ header .head-top{
 }
 
 .sadbar a{
-    margin-left: 1300px;
-    font-size: 40px;
+    margin-left: 1200px;
+    font-size: 30px;
     font-weight: 500;
     transition: 0.3s;
     color: var(--black);
@@ -75,7 +76,7 @@ header .head-top{
 .sadbar ul li{
     color: white;
     font-size: 70px;
-    padding: 20px;
+    padding: 20px 20px 20px 0;
     font-weight: bold;
 }
 
@@ -399,4 +400,141 @@ footer{
         padding: 20px;
 
     }
+}
+
+@media screen and (max-width: 1250px ) {
+    .sadbar a{
+        margin-left: 980px;
+    }
+    
+    
+}
+@media screen and (max-width: 1175px ) {
+    .sadbar a{
+        margin-left: 840px;
+    }
+    
+    
+}
+
+@media screen and (max-width: 1155px ) {
+    .sadbar a{
+        margin-left: 880px;
+    }
+    
+    
+}
+
+@media screen and (max-width: 1070px ) {
+    .sadbar a{
+        margin-left: 750px;
+    }
+    
+    
+}
+
+@media screen and (max-width: 1055px ) {
+    .sadbar a{
+        margin-left: 780px;
+    }
+    
+    
+}
+@media screen and (max-width: 975px ) {
+    .sadbar a{
+        margin-left: 650px;
+    }
+    
+    
+}
+
+@media screen and (max-width: 955px ) {
+    .sadbar a{
+        margin-left: 645px;
+    }
+    
+    
+}
+
+@media screen and (max-width: 855px ) {
+    .sadbar a{
+        margin-left: 580px;
+    }
+    
+    
+}
+@media screen and (max-width: 855px ) {
+    .sadbar a{
+        margin-left: 500px;
+    }
+    
+    
+}
+
+@media screen and (max-width: 750px ) {
+    .sadbar a{
+        margin-left: 480px;
+    }
+    
+    
+}
+
+@media screen and (max-width: 720px ) {
+    .sadbar a{
+        margin-left: 480px;
+    }
+    
+    
+}
+
+@media screen and (max-width: 672px ) {
+    .sadbar a{
+        margin-left: 370px;
+    }
+    .sadbar ul{
+        translate: 30% 0%;
+        margin-top: 100px;
+    }
+    
+}
+
+@media screen and (max-width: 560px ) {
+    .sadbar a{
+        margin-left: 285px;
+    }
+    .sadbar ul{
+        translate: 27% 0%;
+    }
+    
+}
+@media screen and (max-width: 550px ) {
+    .sadbar a{
+        margin-left: 280px;
+    }
+    .sadbar ul{
+        translate: 27% 0%;
+    }
+    
+}
+
+@media screen and (max-width: 550px ) {
+    .sadbar a{
+        margin-left: 180px;
+    }
+    .sadbar ul{
+        translate: 20% 0%;
+    }
+    
+    
+}
+
+@media screen and (max-width: 410px ) {
+    .sadbar a{
+        margin-left: 100px;
+    }
+    .sadbar ul{
+        translate: 20% 0%;
+    }
+    
+    
 }
