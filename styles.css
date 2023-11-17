@@ -4,6 +4,8 @@
     --car: white;
     --foote: #ff7fcf;
     --deg: rgba(120,120,120,0.2);
+    --hover-side: #f44336;
+    --back-side: hsl(163, 27.7%, 32%);
 }
 
 *{
@@ -11,6 +13,8 @@
     padding: 0;
     box-sizing: none;
     font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
 }
 
 header{
@@ -31,17 +35,75 @@ header .head-top{
     padding: 20px 20px 0 0;
 }
 
+.sadbar{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -100%;
+    background-color: var(--back-side);
+    padding-top: 60px;
+    transition: left 0.5s ease;
+
+}
+
+.sadbar a{
+    margin-left: 1300px;
+    font-size: 40px;
+    font-weight: 500;
+    transition: 0.3s;
+    top: 0;
+    color: var(--black);
+}
+
+.sadbar a{
+    color: var(--black);
+}
+.sadbar.active{
+    left: 0;
+}
+.sadbar .close{
+    position: absolute;
+
+}
+
+.sadbar ul{
+    translate: 40% 0%;
+    margin-top: 100px;
+}
+
+.sadbar ul li{
+    color: white;
+    font-size: 70px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.sadbar ul li:hover{
+    color: var(--hover-side);
+    cursor: pointer;
+
+}
+
 header .head-top .hamburg{
     display: flex;
     flex-direction: column;
     margin-left: 5px;
 }
 
-header .head-top .hamburg .hamb{
+header .head-top .hamburg:hover{
+    background-color: transparent;
+}
+
+
+
+span{
     width: 45px;
     height: 5px;
     background: var(--black);
     margin-top: 5px;
+    display: block;
 }
 
 header .head-bottom{
@@ -93,7 +155,6 @@ section#all{
     object-fit: cover;
     background-size: cover;
 }
-
 
 .cas{
     margin: 0 20px 20px 23px;
@@ -158,12 +219,14 @@ button{
     padding: 5px 30px;
     border-radius: 15px;
 }
-.btn-one{
-    background: linear-gradient( #b9bbde,#669);
+#btn-one{
+    background: linear-gradient(45deg, #b9bbde,#669);
     z-index: 10;
+    cursor: pointer;
 }
-.btn-two{
+#btn-two{
     background: linear-gradient( 45deg, #b8babb,#6f6e73);
+    cursor: pointer;
 }
 input{
 
@@ -280,6 +343,17 @@ footer{
         display: none;
     }
 
+    .sadbar a{
+        margin-left: 550px;
+
+    }
+
+    .sadbar ul li{
+        font-size: 50px;
+        padding: 20px;
+
+    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -314,5 +388,16 @@ footer{
         height: 95vh;
         background-size: cover;
         background-repeat: no-repeat;
+    }
+
+    .sadbar a{
+        margin-left: 200px;
+
+    }
+
+    .sadbar ul li{
+        font-size: 50px;
+        padding: 20px;
+
     }
 }
